@@ -1,0 +1,120 @@
+/* The Modal (background) */
+.hr_center {
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid gray; 
+   line-height: 0.1em;
+   margin: 10px 0 20px; 
+} 
+
+.hr_center span { 
+    background:#f2f2f2; 
+    padding:0 10px; 
+}
+.modal_button {
+	width:65%;
+	border-radius: 7px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.modal_button:hover{
+	background-color: white; 
+	color: black; 
+	border: 2px solid #4CAF50;
+}
+.modal_input_box{
+	border: 2px solid gray;
+    border-radius: 7px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+	  height: 50%;
+	  width: 65%;
+	  text-align: center;
+	  text-decoration: none;
+	  font-size: 20px;
+	  opacity: 0.5;
+	  filter: alpha(opacity=50) /* IE 8 and earlier */
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 300; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #f2f2f2; /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+	border-radius:10px;
+    position: relative;
+	align-items: center;
+    background-color: #f2f2f2;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+	padding-top:10px;
+    color: gray;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+	height:40px;
+    /*color: white;*/
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+	height:40px;
+    padding: 2px 16px;
+    /*color: white;*/
+}
