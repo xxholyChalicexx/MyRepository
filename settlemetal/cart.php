@@ -1,4 +1,4 @@
-<?php session_start();
+<?php
 require 'assets/config.php';?>
 <?php include("header.php") ?>
     <div class="container">
@@ -67,7 +67,7 @@ require 'assets/config.php';?>
                                     $totalbase+=$price;
                                     echo "<tr>
                                         <td class='danger'>
-                                            <button aria-label='close' class='close'><span aria-hidden='true'>×".$id."</span></button>
+                                            <a href='assets/validation/remove_cart.php?q=".$key."' aria-label='close' class='close'><span aria-hidden='true'>×</span></a>
                                         </td>
                                         <td>".$service."</td>
                                         <td>".$price."</td>
@@ -77,7 +77,7 @@ require 'assets/config.php';?>
                                   $_SESSION['totalbase']=$totalbase;
                                   $stmt112->close();
                                 }
-                                  $id++;
+
                               }
                                ?>
 
